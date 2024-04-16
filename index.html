@@ -8,41 +8,58 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
 <style>
   body {
-    image: href("assets\images\background-pattern-desktop.svg");
-    font-family: "Work Sans";
+    background-image: url("assets\images\background-pattern-desktop.svg");
+    background-color: hsl(275, 100%, 97%);
+	
 	}
   div.n1 {
-    background-color: hsl(275, 100%, 97%);
-	weight: 700;
+    background-color: hsl(0, 0%, 100%);
+	margin: auto;
+	width: 40%;
+	padding: 40px;
+	border-radius: 15px;
+	
   }
   div.n2 {
     background-color: hsl(0, 0%, 100%);
 	}
-  div.n3 {}
+
   h1 {
+    font-family: "Work Sans";
     
   }
+  p {
+    font-family: "Work Sans";
+	font-size: 16px;
+  }
+  button {
+    font-family: "Work Sans";
+	font-size: 16px;
+  }
 .accordion {
-  background-color: #eee;
+  background-color: hsl(0, 0%, 100%);
   color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
+  border-left: none;
+  border-bottom: 2px solid lightgray;
+  border-top: none;
+  border-right: none;
   text-align: left;
   outline: none;
+  font-family: "Work Sans";
   font-size: 15px;
   transition: 0.4s;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  font-color: hsl(292, 42%, 14%); 
 }
 
 .accordion:after {
-  content: '\002B';
+  content: href="assets\images\icon-plus.svg";
   color: #777;
-  font-weight: bold;
   float: right;
   margin-left: 5px;
 }
